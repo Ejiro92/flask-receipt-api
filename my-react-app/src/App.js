@@ -4,7 +4,7 @@ function App() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch("https://flask-receipt-api.onrender.com/your-endpoint")
+    fetch("https://flask-receipt-api.onrender.com")
       .then((response) => response.json())
       .then((data) => setData(data))
       .catch((error) => console.error("Error fetching data:", error));
